@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Dark-mode SVG logo: lighter strokes suitable for dark backgrounds -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="gd" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e6fff6" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="transparent" />
+  <circle cx="100" cy="100" r="90" fill="transparent" stroke="url(#gd)" stroke-width="6" />
+
+  <g transform="translate(100,98)">
+    <text x="0" y="10" font-size="60" font-family="serif" fill="url(#gd)" text-anchor="middle" dominant-baseline="middle">ک</text>
+  </g>
+
+  <path d="M60 130 C80 120, 120 120, 140 130" stroke="#dffaf0" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.95" />
+</svg>

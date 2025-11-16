@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirtase Hidayah - Guidance Through Faith</title>
+  <meta name="description"
+    content="Premium Islamic website offering authentic guidance, prayer times, Islamic calendar, and community resources for spiritual growth." />
+
+  <!-- Canonical & OpenGraph / Twitter SEO -->
+  <link rel="canonical" href="/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kirtase Hidayah - Guidance Through Faith" />
+  <meta property="og:description"
+    content="Authentic Islamic guidance, prayer times, calendar, and community resources." />
+  <meta property="og:image" content="/hero-mosque.jpg" />
+  <meta property="og:url" content="/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kirtase Hidayah - Guidance Through Faith" />
+  <meta name="twitter:description"
+    content="Authentic Islamic guidance, prayer times, calendar, and community resources." />
+  <meta name="twitter:image" content="/hero-mosque.jpg" />
+
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon.svg" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f766e" />
+  <meta name="apple-mobile-web-app-title" content="Kirtase Hidayah" />
+  <meta name="application-name" content="Kirtase Hidayah" />
+
+  <style>
+    #loading-screen {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      transition: opacity .8s ease, visibility .8s ease
+    }
+
+    #loading-screen::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('/hero-mosque.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      transform: scale(1.1);
+      z-index: -2
+    }
+
+    #loading-screen::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(15, 118, 110, .88)0%, rgba(19, 78, 74, .92)50%, rgba(15, 118, 110, .88)100%);
+      z-index: -1
+    }
+
+    #loading-screen.fade-out {
+      opacity: 0;
+      visibility: hidden
+    }
+
+    .loader-container {
+      background: rgba(255, 255, 255, .1);
+      -webkit-backdrop-filter: blur(24px);
+              backdrop-filter: blur(24px);
+      border: 1px solid rgba(234, 179, 8, .3);
+      border-radius: 32px;
+      padding: 56px 72px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .5), 0 0 120px rgba(234, 179, 8, .2);
+      animation: float-in 1s ease-out;
+      text-align: center;
+      max-width: 90%;
+      position: relative
+    }
+
+    @keyframes float-in {
+      from {
+        opacity: 0;
+        transform: translateY(40px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    .loader-spinner {
+      width: 90px;
+      height: 90px;
+      border: 7px solid rgba(234, 179, 8, .15);
+      border-top: 7px solid #eab308;
+      border-right: 7px solid #f59e0b;
+      border-radius: 50%;
+      animation: spin 1.2s cubic-bezier(.68, -.55, .265, 1.55)infinite;
+      margin: 0 auto;
+      box-shadow: 0 0 40px rgba(234, 179, 8, .4);
+      position: relative
+    }
+
+    .loader-spinner::after {
+      content: '';
+      position: absolute;
+      inset: 15px;
+      border: 3px solid rgba(16, 185, 129, .3);
+      border-radius: 50%;
+      border-top-color: #10b981;
+      animation: spin-reverse 1.8s linear infinite
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0)
+      }
+
+      100% {
+        transform: rotate(360deg)
+      }
+    }
+
+    @keyframes spin-reverse {
+      0% {
+        transform: rotate(360deg)
+      }
+
+      100% {
+        transform: rotate(0)
+      }
+    }
+
+    .loading-bismillah {
+      margin-top: 36px;
+      color: #fbbf24;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      animation: pulse-text 2.5s ease-in-out infinite;
+      text-shadow: 0 2px 24px rgba(234, 179, 8, .6), 0 0 50px rgba(234, 179, 8, .4)
+    }
+
+    @keyframes pulse-text {
+
+      0%,
+      100% {
+        opacity: .75;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.03)
+      }
+    }
+
+    .loading-subtitle {
+      margin-top: 20px;
+      color: rgba(251, 191, 36, .95);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 4px
+    }
+
+    .loading-message {
+      margin-top: 16px;
+      color: rgba(255, 255, 255, .85);
+      font-size: 14px;
+      font-weight: 500
+    }
+
+    .loading-dots {
+      margin-top: 24px;
+      display: flex;
+      gap: 10px;
+      justify-content: center
+    }
+
+    .loading-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #eab308;
+      animation: dot-pulse 1.4s ease-in-out infinite;
+      box-shadow: 0 0 12px rgba(234, 179, 8, .6)
+    }
+
+    .loading-dot:nth-child(1) {
+      animation-delay: 0s
+    }
+
+    .loading-dot:nth-child(2) {
+      animation-delay: .2s
+    }
+
+    .loading-dot:nth-child(3) {
+      animation-delay: .4s
+    }
+
+    @keyframes dot-pulse {
+
+      0%,
+      100% {
+        transform: scale(.7);
+        opacity: .4
+      }
+
+      50% {
+        transform: scale(1.3);
+        opacity: 1
+      }
+    }
+
+    .loader-ring {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgba(234, 179, 8, .1);
+      border-radius: 50%;
+      animation: ring-pulse 3s ease-in-out infinite;
+      pointer-events: none
+    }
+
+    .loader-ring:nth-child(2) {
+      width: 250px;
+      height: 250px;
+      animation-delay: .5s
+    }
+
+    .loader-ring:nth-child(3) {
+      width: 300px;
+      height: 300px;
+      animation-delay: 1s
+    }
+
+    @keyframes ring-pulse {
+
+      0%,
+      100% {
+        transform: scale(.9);
+        opacity: .3
+      }
+
+      50% {
+        transform: scale(1.1);
+        opacity: .6
+      }
+    }
+
+    @media(max-width:640px) {
+      .loader-container {
+        padding: 40px 32px;
+        border-radius: 24px
+      }
+
+      .loader-spinner {
+        width: 70px;
+        height: 70px;
+        border-width: 5px
+      }
+
+      .loader-spinner::after {
+        inset: 12px;
+        border-width: 2px
+      }
+
+      .loading-bismillah {
+        font-size: 20px;
+        margin-top: 28px
+      }
+
+      .loading-subtitle {
+        font-size: 13px;
+        letter-spacing: 3px
+      }
+
+      .loading-message {
+        font-size: 12px
+      }
+
+      .loader-ring {
+        width: 150px;
+        height: 150px
+      }
+
+      .loader-ring:nth-child(2) {
+        width: 190px;
+        height: 190px
+      }
+
+      .loader-ring:nth-child(3) {
+        width: 230px;
+        height: 230px
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-C8K582Q_.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/react-vendor-dEak5Vpg.js">
+  <link rel="modulepreload" crossorigin href="/assets/ui-vendor-C-NzF8rS.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-DGHq4Qz_.css">
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+    <div class="loader-container">
+      <div class="loader-spinner"></div>
+      <div class="loading-bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="loading-subtitle">KIRTASE HIDAYAH</div>
+      <div class="loading-message">Guidance Through Faith</div>
+      <div class="loading-dots">
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+        <div class="loading-dot"></div>
+      </div>
+    </div>
+  </div>
+  <div id="root"></div>
+  <script>
+    function hideLoader() { const l = document.getElementById('loading-screen'); if (!l) return; l.classList.add('fade-out'); setTimeout(() => l.remove(), 800) }
+    window.addEventListener('load', () => setTimeout(hideLoader, 500)); setTimeout(hideLoader, 6000);
+  </script>
+</body>
+
+</html>

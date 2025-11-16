@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .mosque-bg { fill: #0f766e; }
+      .mosque-gold { fill: #eab308; }
+      .mosque-light { fill: #fbbf24; }
+      .mosque-accent { fill: #10b981; }
+    </style>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" class="mosque-bg"/>
+  
+  <!-- Crescent Moon at Top -->
+  <path d="M 256 80 Q 236 80 236 100 Q 236 120 256 120 Q 246 120 246 100 Q 246 80 256 80" class="mosque-light"/>
+  <circle cx="264" cy="100" r="8" class="mosque-bg"/>
+  
+  <!-- Central Minaret -->
+  <rect x="236" y="130" width="40" height="140" class="mosque-gold" rx="4"/>
+  <circle cx="256" cy="120" r="20" class="mosque-light"/>
+  <rect x="246" y="115" width="20" height="15" class="mosque-gold" rx="2"/>
+  
+  <!-- Main Dome -->
+  <ellipse cx="256" cy="280" rx="120" ry="80" class="mosque-gold"/>
+  <path d="M 136 280 Q 256 180 376 280 L 376 320 L 136 320 Z" class="mosque-gold"/>
+  
+  <!-- Side Minarets -->
+  <rect x="140" y="260" width="30" height="100" class="mosque-gold" rx="3"/>
+  <rect x="342" y="260" width="30" height="100" class="mosque-gold" rx="3"/>
+  <circle cx="155" cy="250" r="15" class="mosque-light"/>
+  <circle cx="357" cy="250" r="15" class="mosque-light"/>
+  
+  <!-- Main Building Base -->
+  <rect x="120" y="360" width="272" height="80" class="mosque-gold" rx="4"/>
+  
+  <!-- Entrance Archway -->
+  <path d="M 216 380 Q 256 340 296 380 L 296 440 L 216 440 Z" fill="#0f766e"/>
+  <rect x="240" y="400" width="32" height="40" fill="#134e4a"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="180" cy="300" r="6" class="mosque-light"/>
+  <circle cx="332" cy="300" r="6" class="mosque-light"/>
+  <circle cx="256" cy="340" r="6" class="mosque-light"/>
+  
+  <!-- Windows -->
+  <circle cx="180" cy="390" r="8" class="mosque-accent" opacity="0.6"/>
+  <circle cx="332" cy="390" r="8" class="mosque-accent" opacity="0.6"/>
+  
+  <!-- Star Pattern on Dome -->
+  <circle cx="256" cy="260" r="4" class="mosque-light"/>
+  <circle cx="230" cy="280" r="3" class="mosque-light"/>
+  <circle cx="282" cy="280" r="3" class="mosque-light"/>
+</svg>

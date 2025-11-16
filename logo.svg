@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Islamic Calligraphy Logo - Kirtase Hidayah -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .logo-path { fill: #0f766e; }
+      .logo-stroke { stroke: #0f766e; fill: none; }
+    </style>
+  </defs>
+  
+  <!-- Outer Circle -->
+  <circle cx="500" cy="500" r="480" fill="none" stroke="#0f766e" stroke-width="20"/>
+  <circle cx="500" cy="500" r="450" fill="none" stroke="#0f766e" stroke-width="8"/>
+  
+  <!-- Islamic Calligraphy Design -->
+  <!-- Center Vertical Line -->
+  <rect x="490" y="200" width="20" height="600" class="logo-path" rx="5"/>
+  
+  <!-- Top Arch -->
+  <path d="M 300 350 Q 500 180 700 350" class="logo-stroke" stroke-width="35" stroke-linecap="round"/>
+  <path d="M 320 370 Q 500 220 680 370" class="logo-stroke" stroke-width="15" stroke-linecap="round"/>
+  
+  <!-- Arabic Calligraphy Styled Curves -->
+  <!-- Left Side -->
+  <path d="M 250 400 Q 200 450 220 520 Q 240 580 300 600 Q 350 620 400 580" class="logo-stroke" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 280 450 Q 260 480 270 520 Q 280 550 320 560" class="logo-stroke" stroke-width="18" stroke-linecap="round"/>
+  
+  <!-- Right Side -->
+  <path d="M 750 400 Q 800 450 780 520 Q 760 580 700 600 Q 650 620 600 580" class="logo-stroke" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 720 450 Q 740 480 730 520 Q 720 550 680 560" class="logo-stroke" stroke-width="18" stroke-linecap="round"/>
+  
+  <!-- Bottom Decorative Elements -->
+  <path d="M 350 650 Q 400 680 450 670 Q 480 665 500 650" class="logo-stroke" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 650 650 Q 600 680 550 670 Q 520 665 500 650" class="logo-stroke" stroke-width="20" stroke-linecap="round"/>
+  
+  <!-- Decorative Dots -->
+  <circle cx="350" cy="500" r="12" class="logo-path"/>
+  <circle cx="650" cy="500" r="12" class="logo-path"/>
+  <circle cx="500" cy="300" r="10" class="logo-path"/>
+  
+  <!-- Bottom Wings -->
+  <path d="M 400 700 Q 350 750 320 720 Q 300 700 310 680" fill="#0f766e" opacity="0.8"/>
+  <path d="M 600 700 Q 650 750 680 720 Q 700 700 690 680" fill="#0f766e" opacity="0.8"/>
+  
+  <!-- Central Bottom Point -->
+  <path d="M 480 780 L 500 820 L 520 780 Z" class="logo-path"/>
+</svg>

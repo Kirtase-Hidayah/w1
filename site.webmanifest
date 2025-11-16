@@ -1,0 +1,23 @@
+{
+    "name": "Kirtase Hidayah",
+    "short_name": "Kirtase",
+    "description": "Guidance Through Faith - Islamic knowledge and spiritual guidance",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "/icon.svg",
+            "sizes": "512x512",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#0f766e",
+    "background_color": "#001a16",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
