@@ -1,0 +1,11 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630' viewBox='0 0 1200 630'>
+  <defs>
+    <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#065f46'/>
+      <stop offset='100%' stop-color='#10b981'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='630' fill='url(#g)'/>
+  <text x='600' y='250' text-anchor='middle' font-size='120'>🤝</text>
+  <text x='600' y='360' text-anchor='middle' font-size='48' fill='#EAB308' font-family='Segoe UI, Roboto, Arial'>Akhlaq: Beautiful Character</text>
+</svg>
